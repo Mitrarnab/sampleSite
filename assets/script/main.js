@@ -70,3 +70,27 @@ $('.testimonialSliders').slick({
     nextArrow: $('.testimonial .serviceArrow .next'),
     prevArrow: $('.testimonial .serviceArrow .prev'),
 });
+
+//our teams
+$('.teams').slick({
+    dots: false,
+    slidesToShow: 3,
+    infinite: false,
+    slidesToScroll: 1,
+    nextArrow: $('.ourTeam .serviceArrow .next'),
+    prevArrow: $('.ourTeam .serviceArrow .prev'),
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});

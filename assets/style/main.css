@@ -1243,7 +1243,7 @@ header {
         right: 30%;
         width: 40%;
         margin: auto;
-        bottom: -180px;
+        bottom: -255px;
         justify-content: center;
     }
 
@@ -1295,6 +1295,17 @@ header {
         border-bottom: 1px solid var(--border);
     }
 
+
+    .heading {
+        font-size: 35px;
+        letter-spacing: 1px;
+    }
+
+    .subHead,
+    .servicesDesc h2 {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
 }
 
 @media(max-width:424.98px) {
