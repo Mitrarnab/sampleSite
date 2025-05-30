@@ -71,7 +71,7 @@ $('.testimonialSliders').slick({
     prevArrow: $('.testimonial .serviceArrow .prev'),
 });
 
-//our teams
+//our teams (about page)
 $('.teams').slick({
     dots: false,
     slidesToShow: 3,
@@ -93,4 +93,18 @@ $('.teams').slick({
             }
         }
     ]
+});
+
+// gallery page collapse button
+$('.galleryBtn button').on('click', function () {
+    $('.galleryList button').removeClass('activated')
+    $(this).addClass('activated');
+    const target = $(this).data('target');
+
+    const isShown = $(target).hasClass('show');
+
+    $('.galleryContainer .collapse').collapse('hide');
+    if (!isShown) {
+        $(target).collapse('show');
+    }
 });
